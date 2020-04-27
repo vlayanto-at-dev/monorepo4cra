@@ -18,13 +18,24 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "test:cover": "jest --coverage",
+    "test:jest:watch": "jest --watch --no-cache"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@emotion/core": "^10.0.28"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
+    "babel-jest": "^25.4.0",
+    "jest": "24.9.0",
     "nwb": "0.24.x",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

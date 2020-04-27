@@ -17,7 +17,7 @@
     "start-fe": "yarn workspace front-end start",
     "start-fe-lerna": "lerna run --scope front-end start",
     "build-all": "lerna run build",
-    "build-sm": "lerna run --ignore front-end build"
-    
+    "build-sm": "lerna run --ignore front-end build",
+    "postinstall": "yarn build-sm"
   }
 }
