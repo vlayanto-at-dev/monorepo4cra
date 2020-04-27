@@ -1,0 +1,23 @@
+{
+  "name": "monorepo-pg",
+  "version": "1.0.0",
+  "description": "playground for monorepo",
+  "main": "index.js",
+  "author": "fin",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "start-fe": "yarn workspace front-end start",
+    "start-fe-lerna": "lerna run --scope front-end start",
+    "build-all": "lerna run build",
+    "build-sm": "lerna run --ignore front-end build"
+    
+  }
+}
